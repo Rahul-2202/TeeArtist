@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 app.use("/users", userRouter);
-// app.use("/products", productRouter);
+app.use("/products", productRouter);
 
 const connection_uri = process.env.CONNECTION_URI;
 mongoose
