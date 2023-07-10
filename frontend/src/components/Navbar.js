@@ -17,7 +17,16 @@ const Navbar = () => {
   return (
     <AppBar
       position="sticky"
-      style={{top: 0, left: 0, right: 0, width: "100%", padding: 0, margin: 0}}
+      style={{
+        top: 0,
+        left: 0,
+        right: 0,
+        width: "100%",
+        padding: 0,
+        margin: 0,
+        backgroundColor: "white",
+        color: "#020"
+      }}
     >
       <Toolbar sx={{justifyContent: "space-between", paddingRight: 0}}>
         <Typography variant="h5" component="div">
@@ -64,9 +73,12 @@ const Navbar = () => {
           >
             Products
           </Link>
-          {/* <Link to="/contact" style={{ color: "inherit", textDecoration: "none" }}>
+          <Link
+            to="/contact"
+            style={{color: "inherit", textDecoration: "none"}}
+          >
             Contact
-          </Link> */}
+          </Link>
         </div>
       </Toolbar>
     </AppBar>
